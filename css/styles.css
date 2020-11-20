@@ -262,11 +262,7 @@ margin-right: 0;
 
 
 /*----------------------------ABOUT US---------------------------- */
-.aboutus-first-block {
-    display: flex;
-    position: relative;
-    width: 100%;
-}
+
 .aboutus-text-picture {
     display: flex;
     justify-content: center;
@@ -276,12 +272,10 @@ margin-right: 0;
     bottom: 0;
     width: 100%;
     height: 70px;
-    background-color: grey;
 }
-
-
-
-
+.aboutus-text-picture {
+background-color: rgba(47, 48, 58, 0.8);
+}
 .aboutus .aboutus-title, .ourteam-title, .clients-title {
     color: var(--primary-text-color);
     font-weight: bold;
@@ -305,8 +299,11 @@ margin-right: 0;
 }
 .aboutus-items {
     display: flex;
+    position: relative;
 }
 .aboutus-item {
+    display: flex;
+    position: relative;
     margin-right: 30px;
 }
 .aboutus-item:last-child {
