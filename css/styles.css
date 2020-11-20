@@ -27,6 +27,19 @@ ul {
        
 }
 /*----------------------------HEADER----------------------------*/
+.current::before {
+  position: absolute;
+  content: "";
+  background-color: #2196F3;
+  border-radius: 2px;
+  height: 4px;
+  margin-top: 20px;
+  width: 100%;
+  bottom: -32px;
+}
+.current {
+    position: relative;  
+}
 .icon-email,
 .icon-tel {
   fill: var(--secondary-text-color);
@@ -249,6 +262,26 @@ margin-right: 0;
 
 
 /*----------------------------ABOUT US---------------------------- */
+.aboutus-first-block {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+.aboutus-text-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background-color: grey;
+}
+
+
+
+
 .aboutus .aboutus-title, .ourteam-title, .clients-title {
     color: var(--primary-text-color);
     font-weight: bold;
@@ -261,6 +294,14 @@ margin-right: 0;
       }
 .aboutus {
     padding-bottom: 94px;
+}
+.aboutus-text-picture {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #ffffff;
 }
 .aboutus-items {
     display: flex;
