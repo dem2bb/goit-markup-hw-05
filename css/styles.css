@@ -262,7 +262,11 @@ margin-right: 0;
 
 
 /*----------------------------ABOUT US---------------------------- */
-
+.aboutus-item {
+    display: flex;
+    position: relative;
+    margin-right: 30px;
+}
 .aboutus-text-picture {
     display: flex;
     justify-content: center;
@@ -300,11 +304,6 @@ background-color: rgba(47, 48, 58, 0.8);
 .aboutus-items {
     display: flex;
     position: relative;
-}
-.aboutus-item {
-    display: flex;
-    position: relative;
-    margin-right: 30px;
 }
 .aboutus-item:last-child {
     margin-right: 0;
