@@ -654,6 +654,11 @@ color: var(--primary-text-color);
         line-height: 1.87;
   
 }
+
+.overthumb {
+    overflow: hidden;
+}
+
 .portfolio-whatis {
     color: var(--secondary-text-color);
 }
@@ -666,7 +671,7 @@ color: var(--primary-text-color);
     width: 370px;
     margin-bottom: 30px;
     display: flex;
-    overflow: hidden;
+    /* overflow: hidden; */
     
       transition-property: box-shadow;
       transition-duration: 250ms;
