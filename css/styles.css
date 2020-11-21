@@ -553,18 +553,25 @@ button {
     display: flex;
 
 }
-.button-close-backdrop {
+
+.button-close {
    position: absolute;
    right:0;
    top: 0;
+   display: flex;
    width: 30px;
    height: 30px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
- border-radius: 50%;
- margin-top: 8px;
- margin-right: 8px; 
-;
+   border: 1px solid rgba(0, 0, 0, 0.1);
+   box-sizing: border-box;
+   border-radius: 50%;
+   margin-top: 8px;
+   margin-right: 8px;
+   background-color: #ffffff;
+}
+.button-close-backdrop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
