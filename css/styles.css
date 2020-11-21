@@ -19,7 +19,9 @@ ul {
     margin: 0;
     padding: 0;
 }
-
+button {
+    outline: 0;
+}
 .page {
     background-color: white;
     font-family: Roboto, sans-serif;
@@ -43,6 +45,9 @@ ul {
 .icon-email,
 .icon-tel {
   fill: var(--secondary-text-color);
+          transition-property: fill;
+          transition-duration: 250ms;
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-block {
@@ -88,11 +93,13 @@ ul {
     font-weight: bold;
     font-size: 26px;
     line-height: 1.19;
+            transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo:hover {
     color: var(--navigation-but-color);
-
 }
 
 /*SITE NAV*/
@@ -116,16 +123,17 @@ ul {
 }
 .site-nav a {
     color: var(--primary-text-color);
+            transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav a:focus,
 .site-nav a:hover {
     color: var(--navigation-but-color);
 }
-
 .site-nav .current {
     color: var(--navigation-but-color);
-
 }
 
 /*AUTH NAV*/
@@ -146,10 +154,15 @@ ul {
 .auth-nav .item:last-child {
 margin-right: 0;
 }
+
 .auth-nav a {
     color: var(--secondary-text-color);
     display: flex;
     align-items: center;
+
+        transition-property: color, fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .auth-nav a:focus .icon-block svg,
 .auth-nav a:hover .icon-block svg,
@@ -323,17 +336,23 @@ align-content: center;
     border-radius: 50%;
     height: 44px;
     width: 44px;
-    margin-right: 10px;    
+    margin-right: 10px;   
+    fill: #AFB1B8;
+
+    transition-property: background-color, fill;
+    transition-duration:  250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-social:last-child {
     margin-right: 0px;
 }
 .icon-social { 
-    fill: #AFB1B8;
     height: 20px;
     width: 20px; 
     margin-right: 10px;
 }
+
+
 .icon-link:hover,
 .icon-link:hover svg,
 .icon-link:focus,
@@ -394,15 +413,15 @@ align-content: center;
         height: 90px;
         width: 170px;
         border: 1px solid #AFB1B8;
+        fill: #AFB1B8;
         border-radius: 4px;
         display: block;
             display:flex;
             justify-content: center;
             align-items: center;
-}
-.clients-item {
-    fill: #AFB1B8;
-
+                   transition-property: border, fill;
+                   transition-duration: 250ms;
+                   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-link:hover svg,
 .clients-link:hover,
@@ -424,6 +443,10 @@ align-content: center;
     line-height: 1.19;
     margin-bottom: 30px;
     display: inline-block;
+
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer {
     background-color: #2F303A;
@@ -492,6 +515,10 @@ align-content: center;
     height: 44px;
     width: 44px;
     background: rgba(255, 255, 255, 0.1);
+
+          transition-property: background-color;
+          transition-duration: 250ms;
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-links-item:last-child {
@@ -590,6 +617,11 @@ button {
     display: flex;
     margin-right: 8px;
     padding: 6px 22px 6px 22px;   
+
+
+          transition-property: box-shadow, background-color, color;
+          transition-duration: 250ms;
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-portfolio:focus,
 .button-portfolio:hover{
@@ -634,8 +666,11 @@ color: var(--primary-text-color);
     width: 370px;
     margin-bottom: 30px;
     display: flex;
+    overflow: hidden;
     
-
+      transition-property: box-shadow;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 .flext-item:nth-child(3n) {
@@ -666,15 +701,20 @@ color: var(--primary-text-color);
     position: absolute;
     background: rgba(33, 150, 243, 0.9);
     opacity: 0;
-
+    transform: translateY(100%);
     padding: 50px 24px;
      font-size: 18px;
       line-height: 1.55;
     letter-spacing: 0.03em;
     color: #ffffff;
+
+        transition-property: opacity, transform;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .flext-item:hover::before {
     opacity: 1;
+    transform: translateX(0);
 }
 img {
     display: block;
