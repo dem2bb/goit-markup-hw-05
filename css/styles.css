@@ -567,13 +567,9 @@ button {
    margin-top: 8px;
    margin-right: 8px;
    background-color: #ffffff;
+   justify-content: center;
+   align-items: center;
 }
-.button-close-backdrop {
-    display: flex;
-    align-items: center;
-}
-
-
  
 
 /*----------------------------PORTFOLIO.HTML----------------------------*/
